@@ -1,0 +1,87 @@
+<ion-view view-title="Login" align-title="left">
+    <ion-content scroll="false" class="padding login-page">
+        <div class="row">
+            <div class="col">
+                <div class="text-center">
+                    <span class="ng-icon-comrade-logo comrade-icon-logo"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="text-center">
+                    <span class="comrade-text-logo">COMRADE</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <form>
+                    <md-input-container flex>
+                        <label>login</label>
+                        <input type="text" ng-model="login">
+                    </md-input-container>
+                    <md-input-container flex>
+                        <label>password</label>
+                        <input type="password" ng-model="password">
+                    </md-input-container>
+                    <md-button type="submit" class="button md-primary md-raised button-block">login</md-button>
+                </form>
+            </div>
+        </div>
+
+        <div class="row">
+            <!--<div class="col text-left">-->
+                <!--<md-checkbox ng-model="remembered" aria-label="Remember me">-->
+                    <!--Remember me-->
+                <!--</md-checkbox>-->
+            <!--</div>-->
+            <div class="col text-right">
+                <md-button ui-sref="signup">
+                    Signup
+                </md-button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col text-center login-with-text">
+                <p class="subtitle fancy"><span>OR LOGIN USING</span></p>
+            </div>
+        </div>
+
+        <div class="bar bar-footer transparent">
+            <div class="row">
+                <div class="col">
+                    <md-button class="md-fab md-primary center-element md-hue-2" aria-label="social login">
+                        <i class="ng-icon-social-facebook"></i>
+                    </md-button>
+                </div>
+                <div class="col">
+                    <md-button class="md-fab md-primary center-element md-hue-2" aria-label="social login">
+                        <i class="ng-icon-social-twitter"></i>
+                    </md-button>
+                </div>
+                <div class="col">
+                    <md-button class="md-fab md-primary center-element md-hue-2" aria-label="social login">
+                        <i class="ng-icon-google"></i>
+                    </md-button>
+                </div>
+                <div class="col">
+                    <md-button class="md-fab md-primary center-element md-hue-2" aria-label="social login">
+                        <i class="ng-icon-socail-linkedin"></i>
+                    </md-button>
+                </div>
+                <div class="col">
+                    <md-button class="md-fab md-primary center-element md-hue-2" aria-label="social login">
+                        <i class="ng-icon-foursquare"></i>
+                    </md-button>
+                </div>
+                <div class="col">
+                    <md-button class="md-fab md-primary center-element md-hue-2" aria-label="social login">
+                        <i class="ng-icon-windows"></i>
+                    </md-button>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

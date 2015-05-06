@@ -1,1 +1,132 @@
 /* Empty. Add your own CSS if you like */
+@font-face {
+    font-family: "HelveticaNeue";
+    src: url(../fonts/HelveticaNeue/HelveticaNeue-MedCond.ttf);
+}
+body {
+    font-family: "HelveticaNeue";
+}
+
+.teal-gradient {
+    background-color: #339999;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background: -webkit-gradient(radial, center center, 0, center center, 460, from(rgba(0, 163, 163, 0.28)), to(rgba(0, 116, 105, 0.48)));
+    background: -webkit-radial-gradient(circle, rgba(0, 163, 163, 0.28), rgba(0, 116, 105, 0.48));
+    background: -moz-radial-gradient(circle, rgba(0, 163, 163, 0.28), rgba(0, 116, 105, 0.48));
+    background: -ms-radial-gradient(circle, rgba(0, 163, 163, 0.28), rgba(0, 116, 105, 0.48));
+}
+
+.login-page .comrade-icon-logo {
+    text-align: center;
+    font-size: 12em;
+    color: rgb(0,150,136);
+    /*color: rgb(0,150,136);*/
+}
+
+.login-page .comrade-text-logo {
+    font-size: 6em;
+    letter-spacing: -5px;
+    color: rgb(0,150,136);
+    font-family: HelveticaNeue;
+}
+
+.login-page md-input-container input {
+    background-color: rgba(0, 0, 0, 0.3);
+    bottom: 0;
+    color: #fff;
+    letter-spacing: 0.25rem;
+    padding: 0px 10px;
+    height: 34px;
+    position: relative;
+    z-index: 1;
+}
+
+.login-page {
+    background-image: url("../img/light-teal-bg.jpg");
+    background-size: cover;
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+md-input-container.md-default-theme .md-input {
+    color: #fff;
+}
+
+.login-page md-input-container label {
+    letter-spacing: 0.15rem;
+    color: #fff;
+    padding: 0 10px;
+    z-index: 2;
+}
+
+.login-page .bar-footer {
+    height: auto;
+}
+
+.center-element {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.transparent {
+    background: none;
+}
+
+.login-with-text {
+    margin-left: -15px;
+    position: fixed;
+    width: 100%;
+    color: rgb(0,150,136);
+    bottom: 80px;
+    font-size: 2em;
+}
+
+/** Overriding Angular-Material **/
+
+md-input-container {
+    padding: 2px;
+}
+
+.md-fab i {
+    font-size: 2.5em;
+}
+
+.login-page .md-fab {
+    padding-top: 11px;
+}
+
+/** fancy line on sides. Credits to https://css-tricks.com/line-on-sides-headers/ **/
+
+.fancy {
+    line-height: 0.5;
+    letter-spacing: 4px;
+    text-align: center;
+}
+.fancy span {
+    display: inline-block;
+    position: relative;
+}
+.fancy span:before,
+.fancy span:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    top: 0;
+    width: 600px;
+}
+.fancy span:before {
+    right: 100%;
+    top: 5px;
+    margin-right: 15px;
+}
+.fancy span:after {
+    left: 100%;
+    top: 5px;
+    margin-left: 15px;
+}
